@@ -6,7 +6,7 @@ st.header('Dashboard de Anúncios de Carros')
 
 car_data = pd.read_csv('vehicles.csv')
 
-build_histogram = st.button('Criar Histograma')
+build_histogram = st.checkbox('Criar Histograma')
 
 if build_histogram:
     st.write('Criando um histograma para o conjunto de dados de aanúncios de vendas de carros')
@@ -15,7 +15,7 @@ if build_histogram:
 
     st.plotly_chart(fig, use_container_width=True)
 
-build_scatter = st.button('Criar Gráfico de Dispersão')
+build_scatter = st.checkbox('Criar Gráfico de Dispersão')
 
 if build_scatter:
     st.write('Criando um gráfico de dispersão para o conjunto de dados de anúncios de vendas de carros')
